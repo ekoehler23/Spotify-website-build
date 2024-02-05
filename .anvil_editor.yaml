@@ -9,6 +9,7 @@ unique_ids:
   modules: {}
   server_modules:
     ServerModule1: '1685452365618467403552812.8588'
+    ServerPackage1: '1707174785811279711434894.701'
   assets:
     standard-page.html: MD5G2GHFAVWRJ5VSBZKNN45Q6NRNQBBD
     theme.css: YHRPJKIIYKWDQZUBLCIQ7MIUZQUXJWBB

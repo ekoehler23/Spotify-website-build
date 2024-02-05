@@ -8,6 +8,9 @@ services:
   client_config: {allow_signup: true, enable_automatically: true, use_email: true,
     confirm_email: false, use_google: false, require_secure_passwords: true}
   server_config: {user_table: users}
+- source: /runtime/services/anvil/secrets.yml
+  client_config: {}
+  server_config: {}
 startup: {type: form, module: Frame}
 package_name: Dashboard_Template_A
 allow_embedding: false
@@ -62,3 +65,16 @@ db_schema:
       admin_ui: {order: 3, width: 200}
       type: datetime
     title: Files
+secrets:
+  CLIENT_ID:
+    value: {OBS6CSZQY7L7VNUE: 6xKlZmspOhmJZjVlN/IY13t0RWSsEDOcGc8K3HIMxlJj5bXqXrZnUUFtvq6Ond7luvG+7g8p6RZ1kBesJi+Xq4RS7vTgHknnlbk360DSUx3YlV71y4drux/hRd9whrFunFQ8aXuBz6u0qHZ+KxpnwD+6JDbS9c3X6j1TtqTq4KZIdxI=}
+    type: secret
+  CLIENT_SECRET:
+    value: {OBS6CSZQY7L7VNUE: MMUeff6aX5TfQAs1j1oHslKHIHoAKGO8j8pYlnajKuU1ff0fqW95KEFyEGRvnev+LDTijzzMt8mWFZTmE9rdmsxf+r3dPqDmHn0qc7+XZoAZNd6sTr6a2SMssJeO5NjUoz38fgEHv+1oYWuib3d9abi4/iQTJdud8JN+TidNH3BoW3M=}
+    type: secret
+  OPENAI_API_KEY:
+    value: {OBS6CSZQY7L7VNUE: q4aN+nuzQezpgAW4blBuyapCRAiLyla303tNje5X1IVYRWfni5gjv3fuNk8HpaQS/xJrUx91ZrkrjMD2kYYa+FZiner9z2UIIMhBXpsFhHWJ0T+meqDpRoXwI0mjuAqo/l34Vmi8wdS/YPVy6+tTw6bjMRyh1R0fqr/e4ILBc/iJCQBxaNf/IzFHrZwbMt4XAl9y0REN}
+    type: secret
+  new_secret:
+    type: secret
+    value: {OBS6CSZQY7L7VNUE: ''}
