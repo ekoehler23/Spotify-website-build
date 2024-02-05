@@ -50,7 +50,7 @@ class Frame(FrameTemplate):
 
   def playlist_panel_show(self, **event_args):
     """This method is called when the repeating panel is shown on the screen"""
-    
+    self.playlist_panel.items = ['a', 'b', 'c']
     pass
 
 
